@@ -2,7 +2,7 @@
 
 * Студент: [Анна Васильева](https://up.htmlacademy.ru/htmlcss/40/user/2520103).
 * Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199)
-
+* Сайт: [Мой проект Седона](https://anna-vasileva86.github.io/2520103-sedona-40/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
