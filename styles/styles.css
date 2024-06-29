@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.navigation {
+  font-size: 20px;
+  Line-height:24px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+}
+
+.navigation-button {
+  font-size: 16px;
+  Line-height:20px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  background-color: rgba(117, 97, 87, 1);
+}
+
+.navigation-link {
+  font-size: 20px;
+  Line-height:24px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.main-inner {
+  background-size: cover; /*есть мысль, что это лишнее*/
+  /*color: rgba(51, 51, 51, 1);*/
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
+.slogan {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(131, 179, 211, 0.4);
+  background-image: url("../images/mountains_background.jpg");  /*не пойму почему пропала нижняя часть изображения*/
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+.advantages-title, .services-title-general, .booking-title, .search-hotels-titles {
+  font-size: 30px;
+  Line-height:36px;
+  font-weight: 700;
+  text-transform:uppercase;
+  color: rgba(0, 0, 0, 1);
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantagesm-item {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-blue {
+  background-color:rgba(130, 179, 211, 1);
+  color:rgba(255, 255, 255, 1);
+}
+
+.advantages-item-blue-title{
+  font-size: 24px;
+  Line-height: 28px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  text-transform:uppercase;
+}
+
+.advantages-item-title, .services-title {
+  font-size: 24px;
+  Line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  text-transform:uppercase;
+  color: rgba(0, 0, 0, 1);
+}
+
+.advantages-item-description, .services-description, .hotel-card-group, .hotel-card-price {
+  font-size: 18px;
+  Line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.services-item:first-child, .services-item:last-child {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.subscription {
+  background-color: rgba(131, 179, 211, 1);
+  color:rgba(255, 255, 255, 1);
+  background-image: url("../images/background_subscription.jpg"); /*не пойму почему пропала нижняя часть изображения*/
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+.subscription-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color:rgba(255, 255, 255, 1);
+  text-transform:uppercase;
+}
+
+.inner{
+  background-color: rgba(131, 179, 211, 1);
+  color:rgba(255, 255, 255, 1);
+  background-image: url("../images/mountains_background_page_2.jpg"); /*не пойму почему пропала нижняя часть изображения*/
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+.catalog-filters-group {
+  font-size: 20px;
+  Line-height:24px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+
+button {
+  background-color: rgba(117, 97, 87, 1);
+  color:rgba(255, 255, 255, 1);
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform:uppercase;
+}
+
+.button {
+  background-color:rgba(130, 179, 211, 1);
+  color:rgba(255, 255, 255, 1);
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.field-e-mail{
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color:rgba(255, 255, 255, 1);
+}
+
+.phone {
+font-size: 40px;
+line-height: 40px;
+font-weight: 400;
+color: rgba(0, 0, 0, 1);
+text-decoration: none;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs-item{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color:rgba(255, 255, 255, 1);
+  text-decoration: none;
+  text-align: left;
+}
+
+.control-input {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.field {
+font-size: 18px;
+line-height: 24px;
+font-weight: 700;
+}
+
+form .button  {
+font-size: 16px;
+line-height: 20px;
+font-weight: 700;
+}
+
+form .button-reset  {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color:rgba(130, 179, 211, 0); /*не придумала как по-другому убрать фон кнопки, но появился вопрос - как убрать тень*/
+  }
+
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  }
+
+.hotel-card-link {
+font-size: 24px;
+line-height: 28px;
+font-weight: 700;
+color: rgba(0, 0, 0, 1);
+text-decoration: none;
+}
+
+.show-more {
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+color: rgba(255, 255, 255, 1);
+text-decoration: none;
+background-color:rgba(117, 97, 87, 1);
+}
+
+.favotite {
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+color: rgba(255, 255, 255, 1);
+background-color: rgba(130, 179, 211, 1);
+}
+
+.favotite-added {
+  font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+color: rgba(255, 255, 255, 1);
+background-color: rgba(125, 181, 79, 1);
+}
+
+.reputation-result {
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+
+}
+
+.pagination-link {
+  background-color:rgba(130, 179, 211, 1);
+    color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.pagination-current {
+  background-color:rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 1);
+
+}
+
+.pagination-link-points {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.subscription-catalog-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color:rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+  text-transform:uppercase;
+}
