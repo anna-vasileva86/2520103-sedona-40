@@ -19,53 +19,77 @@ body {
   line-height: 26px;
   font-style: normal;
   font-weight: 400;
-  color: rgba(51, 51, 51, 1);
-  background-color: rgba(255, 255, 255, 1);
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+button {
+  font-family:inherit;
+  background-color: #756157;
+  color:#FFFFFF;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform:uppercase;
+  padding: 8px 50px 8px 50px;
+  border-radius: 4px;
+}
+
+.button {
+  font-family:inherit;
+  background-color:#82B3D3;
+  color:#FFFFFF;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 50px 8px 50px;
 }
 
 .navigation {
   font-size: 20px;
   Line-height:24px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .navigation-button {
   font-size: 16px;
   Line-height:20px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 1);
+  color: #FFFFFF;
+  text-transform:uppercase;
   text-decoration: none;
-  background-color: rgba(117, 97, 87, 1);
+  background-color: #756157;
+  padding: 8px 50px 8px 50px;
+  border-radius: 4px;
 }
 
 .navigation-link {
   font-size: 20px;
   Line-height:24px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   text-decoration: none;
 }
 
 .main-inner {
   background-size: cover; /*есть мысль, что это лишнее*/
-  /*color: rgba(51, 51, 51, 1);*/
-  background-color: rgba(255, 255, 255, 1);
+  /*color: #333333;*/
+  background-color: #FFFFFF;
   text-align: center;
 }
 
 .count {
 font-size: 10px;
-font-weight: 400;
+
 line-height: 10px;
-background-color:rgba(125, 181, 79, 1);
-color:rgba(255, 255, 255, 1);
+background-color:#7DB54F;
+color:#FFFFFF;
 }
 
 
 .slogan {
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(131, 179, 211, 0.4);
+  color: #000000;
+  background-color: #82a9c4;
   background-image: url("../images/mountains_background.jpg");  /*не пойму почему пропала нижняя часть изображения*/
   background-size: cover;
   background-repeat:no-repeat;
@@ -76,7 +100,7 @@ color:rgba(255, 255, 255, 1);
   Line-height:36px;
   font-weight: 700;
   text-transform:uppercase;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .advantages-item {
@@ -87,15 +111,15 @@ color:rgba(255, 255, 255, 1);
 }
 
 .advantages-item-blue {
-  background-color:rgba(130, 179, 211, 1);
-  color:rgba(255, 255, 255, 1);
+  background-color:#82B3D3;
+  color:#FFFFFF;
 }
 
 .advantages-item-blue-title{
   font-size: 24px;
   Line-height: 28px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 1);
+  color: #FFFFFF;
   text-transform:uppercase;
 }
 
@@ -105,13 +129,12 @@ color:rgba(255, 255, 255, 1);
   font-weight: 700;
   text-align: center;
   text-transform:uppercase;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .advantages-item-description, .services-description, .hotel-card-group, .hotel-card-price {
   font-size: 18px;
   Line-height: 21px;
-  font-weight: 400;
   text-align: center;
 }
 
@@ -120,8 +143,8 @@ color:rgba(255, 255, 255, 1);
 }
 
 .subscription {
-  background-color: rgba(131, 179, 211, 1);
-  color:rgba(255, 255, 255, 1);
+  background-color: #83b3d3;
+  color:#FFFFFF;
   background-image: url("../images/background_subscription.jpg"); /*не пойму почему пропала нижняя часть изображения*/
   background-size: cover;
   background-repeat:no-repeat;
@@ -131,13 +154,13 @@ color:rgba(255, 255, 255, 1);
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  color:rgba(255, 255, 255, 1);
+  color:#FFFFFF;
   text-transform:uppercase;
 }
 
 .inner{
-  background-color: rgba(131, 179, 211, 1);
-  color:rgba(255, 255, 255, 1);
+  background-color: #83b3d3;
+  color:#FFFFFF;
   background-image: url("../images/mountains_background_page_2.jpg"); /*не пойму почему пропала нижняя часть изображения*/
   background-size: cover;
   background-repeat:no-repeat;
@@ -147,39 +170,20 @@ color:rgba(255, 255, 255, 1);
   font-size: 20px;
   Line-height:24px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-}
-
-button {
-  background-color: rgba(117, 97, 87, 1);
-  color:rgba(255, 255, 255, 1);
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform:uppercase;
-}
-
-.button {
-  background-color:rgba(130, 179, 211, 1);
-  color:rgba(255, 255, 255, 1);
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 400;
+  color: #FFFFFF;
 }
 
 .field-e-mail{
-  font-family: PT Sans;
+  font-family: inherit;
   font-size: 18px;
-  font-weight: 400;
   line-height: 24px;
-  color:rgba(255, 255, 255, 1);
+  color:#FFFFFF;
 }
 
 .phone {
 font-size: 40px;
 line-height: 40px;
-font-weight: 400;
-color: rgba(0, 0, 0, 1);
+color: #000000;
 text-decoration: none;
 }
 
@@ -192,31 +196,38 @@ text-decoration: none;
 .breadcrumbs-item{
   font-size: 16px;
   line-height: 21px;
-  font-weight: 400;
-  color:rgba(255, 255, 255, 1);
+  color:#FFFFFF;
   text-decoration: none;
   text-align: left;
 }
 
-.control-input {
+.catalog-filters-item{
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
 }
 
+.limitation {
+  font-size: 18px;
+  line-height: 24px;
+
+}
+
 .field {
+font-family:inherit;
 font-size: 18px;
 line-height: 24px;
 font-weight: 700;
 }
 
-form .button  {
+.button-apply {
 font-size: 16px;
 line-height: 20px;
 font-weight: 700;
+background-color: #82B3D3;
 }
 
-form .button-reset  {
+.button-reset  {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -224,6 +235,7 @@ form .button-reset  {
   }
 
 .select-control {
+  font-family:inherit;
   font-size: 18px;
   line-height: 21px;
 }
@@ -232,7 +244,7 @@ form .button-reset  {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   text-decoration: none;
   }
 
@@ -240,7 +252,7 @@ form .button-reset  {
 font-size: 24px;
 line-height: 28px;
 font-weight: 700;
-color: rgba(0, 0, 0, 1);
+color: #000000;
 text-decoration: none;
 }
 
@@ -248,49 +260,52 @@ text-decoration: none;
 font-size: 16px;
 font-weight: 700;
 line-height: 20px;
-color: rgba(255, 255, 255, 1);
+color: #FFFFFF;
+text-transform:uppercase;
 text-decoration: none;
-background-color:rgba(117, 97, 87, 1);
+background-color:#756157;
+padding: 8px 50px 8px 50px;
+border-radius: 4px;
 }
 
 .favotite {
+font-family:inherit;
 font-size: 16px;
 font-weight: 700;
 line-height: 20px;
-color: rgba(255, 255, 255, 1);
-background-color: rgba(130, 179, 211, 1);
+color: #FFFFFF;
+background-color: #82B3D3;
 }
 
 .favotite-added {
-  font-size: 16px;
+font-family:inherit;
+font-size: 16px;
 font-weight: 700;
 line-height: 20px;
-color: rgba(255, 255, 255, 1);
-background-color: rgba(125, 181, 79, 1);
+color: #FFFFFF;
+background-color: #7DB54F;
 }
 
 .reputation-result {
 font-size: 16px;
-font-weight: 400;
 line-height: 20px;
-
 }
 
 .pagination-link {
-  background-color:rgba(130, 179, 211, 1);
-    color: rgba(255, 255, 255, 1);
+  background-color: #82B3D3;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 .pagination-current {
   background-color:rgba(0, 0, 0, 0.2);
-  color: rgba(0, 0, 0, 1);
-
+  color: #000000;
+  padding: 11.36px 23.45px 12.64px 23.55px;
 }
 
 .pagination-link-points {
-  background-color: rgba(255, 255, 255, 1);
-  color: rgba(0, 0, 0, 1);
+  background-color: #FFFFFF;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -298,7 +313,7 @@ line-height: 20px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  color:rgba(0, 0, 0, 1);
-  background-color: rgba(255, 255, 255, 1);
+  color:#000000;
+  background-color: #FFFFFF;
   text-transform:uppercase;
 }
