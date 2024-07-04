@@ -13,7 +13,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction:column;
+  min-height:100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -21,6 +29,20 @@ body {
   font-weight: 400;
   color: #333333;
   background-color: #FFFFFF;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  width: 1200px;
+  flex-direction:column;
+  margin: 0 auto;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
 }
 
 button {
@@ -33,6 +55,7 @@ button {
   text-transform:uppercase;
   padding: 8px 50px 8px 50px;
   border-radius: 4px;
+  border-width: 0px;
 }
 
 .button {
@@ -42,13 +65,34 @@ button {
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px 8px 50px;
+  border-width: 0px;
 }
 
+
+
 .navigation {
+  display: flex;
+  width: 1200px;
   font-size: 20px;
   Line-height:24px;
   font-weight: 700;
   color: #000000;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 450px;
+  margin: 0;
+  padding:0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
 }
 
 .navigation-button {
@@ -67,8 +111,13 @@ button {
   font-size: 20px;
   Line-height:24px;
   font-weight: 700;
+  text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .main-inner {
@@ -78,14 +127,17 @@ button {
   text-align: center;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .count {
 font-size: 10px;
-
 line-height: 10px;
 background-color:#7DB54F;
 color:#FFFFFF;
 }
-
 
 .slogan {
   color: #000000;
@@ -93,6 +145,14 @@ color:#FFFFFF;
   background-image: url("../images/mountains_background.jpg");  /*не пойму почему пропала нижняя часть изображения*/
   background-size: cover;
   background-repeat:no-repeat;
+}
+
+.slogan-image {
+  padding: 51px 371px 82px;
+}
+
+.advantages-general {
+  padding: 69px 274px;
 }
 
 .advantages-title, .services-title-general, .booking-title, .search-hotels-titles {
@@ -103,16 +163,51 @@ color:#FFFFFF;
   color: #000000;
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
+  Width: 400px;
+  Height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 85px;
+  padding-right: 85px;
+  box-sizing:border-box;
 }
 .advantagesm-item {
   background-color: rgba(131, 179, 211, 0.2);
+  Width: 400px;
+  Height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 85px;
+  padding-right: 85px;
+  box-sizing:border-box;
 }
 
 .advantages-item-blue {
+  text-align: center;
   background-color:#82B3D3;
   color:#FFFFFF;
+  Width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advanages-column-text {  /*по центру почему то название, не весь текст, но если метку изменить на метку заголовка, то выравнивание будет точнее. Почему?*/
+  Width: 400px;            /*Посмотрела лайф, убрала flex и текст выровнялся. Но причины все равно не пойму*/
+  padding-left: 85px;
+  padding-right: 85px;
+  box-sizing: border-box;
 }
 
 .advantages-item-blue-title{
@@ -121,6 +216,7 @@ color:#FFFFFF;
   font-weight: 700;
   color: #FFFFFF;
   text-transform:uppercase;
+  padding-top: 102px; /*не уверена*/
 }
 
 .advantages-item-title, .services-title {
@@ -138,16 +234,58 @@ color:#FFFFFF;
   text-align: center;
 }
 
-.services-item:first-child, .services-item:last-child {
+.advantages-item-description-image {
+  height: 100%;
+  width: 800px;
+  object-fit: cover;
+}
+
+.services-general {
+  padding: 64px 355px;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-item-2 {
+  background-color :#FFFFFF;
+  width: 400px;
+  Height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 85px;
+  padding-right: 85px;
+  box-sizing:border-box;
+}
+
+.services-item-1 {
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  Height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 85px;
+  padding-right: 85px;
+  box-sizing:border-box;
+}
+
+.booking {
+  padding: 96px 304px;  /*Перенос слов не в том месте. нужно после запятой*/
 }
 
 .subscription {
   background-color: #83b3d3;
   color:#FFFFFF;
-  background-image: url("../images/background_subscription.jpg"); /*не пойму почему пропала нижняя часть изображения*/
+  background-image: url("../images/background_subscription.jpg");
   background-size: cover;
   background-repeat:no-repeat;
+  padding: 96px 258px 104px;
 }
 
 .subscription-title {
@@ -164,6 +302,7 @@ color:#FFFFFF;
   background-image: url("../images/mountains_background_page_2.jpg"); /*не пойму почему пропала нижняя часть изображения*/
   background-size: cover;
   background-repeat:no-repeat;
+
 }
 
 .catalog-filters-group {
@@ -171,20 +310,33 @@ color:#FFFFFF;
   Line-height:24px;
   font-weight: 700;
   color: #FFFFFF;
+  Width: 150px;
+  margin: 0 auto;
+}
+
+.price {
+  Width: 288px;
 }
 
 .field-e-mail{
+  display: flex;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   color:#FFFFFF;
+  background-color: #F2F2F2;
+  width: 452px;
+height: 52px;
+gap: 260px;
+border-radius: 4px 0px 0px 4px;
+border-width: 0px;
 }
 
-.phone {
-font-size: 40px;
-line-height: 40px;
-color: #000000;
-text-decoration: none;
+.inner-header {
+  padding-top: 35px;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin: 0px;
 }
 
 .inner-header-title {
@@ -193,7 +345,19 @@ text-decoration: none;
   font-weight: 700;
 }
 
-.breadcrumbs-item{
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  padding-top: 6px;
+  padding-left: 70px;
+  margin: 0 auto;
+}
+
+.breadcrumbs-list {
+  list-style-type: none;
+}
+
+.breadcrumbs-item {
   font-size: 16px;
   line-height: 21px;
   color:#FFFFFF;
@@ -201,23 +365,35 @@ text-decoration: none;
   text-align: left;
 }
 
-.catalog-filters-item{
+.visually-hidden {
+  display: none;
+}
+
+.catalog-filters {
+  display: flex;
+  padding: 40px 70px 70px;
+  margin: 0 auto;
+}
+
+.catalog-filters-item{    /*Не соображу как выравнивание сделать*/
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
+  list-style-type: none;
 }
 
 .limitation {
   font-size: 18px;
   line-height: 24px;
-
+  color: #868686;
 }
 
 .field {
-font-family:inherit;
-font-size: 18px;
-line-height: 24px;
-font-weight: 700;
+  font-family:inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  Width: 143px;
 }
 
 .button-apply {
@@ -225,6 +401,9 @@ font-size: 16px;
 line-height: 20px;
 font-weight: 700;
 background-color: #82B3D3;
+Width: 191px;
+Height: 36px;
+border-width: 0px;
 }
 
 .button-reset  {
@@ -232,6 +411,9 @@ background-color: #82B3D3;
   line-height: 20px;
   font-weight: 700;
   background-color:rgba(130, 179, 211, 0); /*не придумала как по-другому убрать фон кнопки, но появился вопрос - как убрать тень*/
+  Width: 191px;
+  Height: 36px;
+  border-width: 0px;
   }
 
 .select-control {
@@ -239,6 +421,47 @@ background-color: #82B3D3;
   font-size: 18px;
   line-height: 21px;
 }
+
+.search-hotels-container {
+  display: flex;
+  padding: 50px 70px 40px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.search-hotels-titles {
+  margin-top: 6px;
+  Width:338px;
+}
+
+.select-control {
+  margin-right: 70px;
+  Height: 49px;
+  Width: 292px;
+}
+
+                                      /*Здесь иконки вида*/
+
+.product-list {
+  margin: 0px 70px;
+  padding: 0;
+  display: flex;
+  flex-wrap:wrap;
+  list-style: none;
+  gap: 20px;
+
+
+                       /*Обратить внимание на границы ячеек, центрирование */
+}
+
+.hotel-card {
+  box-sizing: border-box;
+  Width: 340px;
+  Border: 1px solid;
+  border-color: rgba(230, 230, 230, 1);
+  padding: 20px;
+}
+
 
 .hotel-card-title {
   font-size: 24px;
@@ -256,34 +479,65 @@ color: #000000;
 text-decoration: none;
 }
 
+.card-buttons {
+  display: flex;
+
+}
+
 .show-more {
 font-size: 16px;
 font-weight: 700;
 line-height: 20px;
+text-align: center;
 color: #FFFFFF;
 text-transform:uppercase;
 text-decoration: none;
 background-color:#756157;
-padding: 8px 50px 8px 50px;
+padding-top: 8px;
+padding-bottom: 8px;
 border-radius: 4px;
+width: 140px;
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
 
-.favotite {
-font-family:inherit;
+.favotite {    /*Почему переносится*/
 font-size: 16px;
 font-weight: 700;
 line-height: 20px;
+text-align: center;
 color: #FFFFFF;
 background-color: #82B3D3;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left: 18px;     /*Без этих двух значение В ИЗБРАННОЕ с переносом идет, причем на макете верное значение 20*/
+padding-right: 18px;    /*Без этих двух значение В ИЗБРАННОЕ с переносом идет, причем на макете верное значение 20*/
+border-radius: 4px;
+width: 140px;
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
 
 .favotite-added {
-font-family:inherit;
 font-size: 16px;
 font-weight: 700;
 line-height: 20px;
 color: #FFFFFF;
 background-color: #7DB54F;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left: 16px;     /*Без этих двух значение В ИЗБРАННОМ с переносом идет, причем на макете верное значение 18*/
+padding-right: 16px;    /*Без этих двух значение В ИЗБРАННОМ с переносом идет, причем на макете верное значение 18*/
+border-radius: 4px;
+border-radius: 4px;
+width: 140px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .reputation-result {
@@ -291,22 +545,45 @@ font-size: 16px;
 line-height: 20px;
 }
 
+.pagination {
+  display:flex;
+  gap: 8px;
+  margin-top: 80px;
+  margin-left: 70px;
+}
+
 .pagination-link {
   background-color: #82B3D3;
   color: #FFFFFF;
   text-decoration: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  padding: 11px 0px 0px 0px;
+  /*Текст был не посредине, правильно ли так центровать, если в фигме нецелые числа, не могу отцентровать текст*/
 }
 
 .pagination-current {
   background-color:rgba(0, 0, 0, 0.2);
   color: #000000;
-  padding: 11.36px 23.45px 12.64px 23.55px;
 }
 
 .pagination-link-points {
   background-color: #FFFFFF;
   color: #000000;
   text-decoration: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  padding: 11px 0px 0px 0px;
+}
+
+.subscription-catalog {
+  padding: 96px 258px 104px;
+}
+
+.subscription-catalog-form, .subscription-form {
+  display: flex;
 }
 
 .subscription-catalog-title {
@@ -316,4 +593,40 @@ line-height: 20px;
   color:#000000;
   background-color: #FFFFFF;
   text-transform:uppercase;
+}
+
+.footer-socials {      /*Не удается выровнять футер. Номер телефона не в середине*/
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 70px 30px;
+  justify-content: space-between;
+}
+
+                     /*Footer*/
+.social-links {
+  display: flex;
+  max-width: 150px;
+  margin-right: 41px;
+}
+
+.social-links-icon {
+  display: flex;
+  justify-content: center;
+  width: 24px;
+  Width: 47px;
+  Height:40px;
+}
+
+.phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  width: 331px;
+  }
+
+.htmlacademy-link {
+  width: 120px;
+  margin-left: auto;
 }
