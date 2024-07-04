@@ -388,6 +388,12 @@ border-width: 0px;
   color: #868686;
 }
 
+.limitfieldation {
+  font-size: 18px;
+  line-height: 24px;
+  color: #868686;
+}
+
 .field {
   font-family:inherit;
   font-size: 18px;
