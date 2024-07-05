@@ -41,7 +41,7 @@ body {
   margin: 0 auto;
 }
 
-*::before, *::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -55,7 +55,7 @@ button {
   text-transform:uppercase;
   padding: 8px 50px 8px 50px;
   border-radius: 4px;
-  border-width: 0px;
+  border-width: 0;
 }
 
 .button {
@@ -65,10 +65,8 @@ button {
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px 8px 50px;
-  border-width: 0px;
+  border: none;
 }
-
-
 
 .navigation {
   display: flex;
@@ -121,7 +119,7 @@ button {
 }
 
 .main-inner {
-  background-size: cover; /*есть мысль, что это лишнее*/
+  background-size: cover;
   /*color: #333333;*/
   background-color: #FFFFFF;
   text-align: center;
@@ -142,7 +140,7 @@ color:#FFFFFF;
 .slogan {
   color: #000000;
   background-color: #82a9c4;
-  background-image: url("../images/mountains_background.jpg");  /*не пойму почему пропала нижняя часть изображения*/
+  background-image: url("../images/mountains_background.jpg");
   background-size: cover;
   background-repeat:no-repeat;
 }
@@ -173,8 +171,8 @@ color:#FFFFFF;
 
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
-  Width: 400px;
-  Height: 385px;
+  width: 400px;
+  min-height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -182,29 +180,22 @@ color:#FFFFFF;
   padding-right: 85px;
   box-sizing:border-box;
 }
-.advantagesm-item {
+.darker-item {
   background-color: rgba(131, 179, 211, 0.2);
-  Width: 400px;
-  Height: 385px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 85px;
-  padding-right: 85px;
-  box-sizing:border-box;
 }
 
 .advantages-item-blue {
   text-align: center;
   background-color:#82B3D3;
   color:#FFFFFF;
-  Width: 1200px;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
 }
 
-.advanages-column-text {  /*по центру почему то название, не весь текст, но если метку изменить на метку заголовка, то выравнивание будет точнее. Почему?*/
-  Width: 400px;            /*Посмотрела лайф, убрала flex и текст выровнялся. Но причины все равно не пойму*/
+.advanages-column-text {
+  width: 400px;
   padding-left: 85px;
   padding-right: 85px;
   box-sizing: border-box;
@@ -254,7 +245,7 @@ color:#FFFFFF;
 .services-item-2 {
   background-color :#FFFFFF;
   width: 400px;
-  Height: 385px;
+  height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -276,7 +267,7 @@ color:#FFFFFF;
 }
 
 .booking {
-  padding: 96px 304px;  /*Перенос слов не в том месте. нужно после запятой*/
+  padding: 96px 304px;
 }
 
 .subscription {
@@ -299,7 +290,7 @@ color:#FFFFFF;
 .inner{
   background-color: #83b3d3;
   color:#FFFFFF;
-  background-image: url("../images/mountains_background_page_2.jpg"); /*не пойму почему пропала нижняя часть изображения*/
+  background-image: url("../images/mountains_background_page_2.jpg");
   background-size: cover;
   background-repeat:no-repeat;
 
@@ -328,15 +319,15 @@ color:#FFFFFF;
   width: 452px;
 height: 52px;
 gap: 260px;
-border-radius: 4px 0px 0px 4px;
-border-width: 0px;
+border-radius: 4px 0 0 4px;
+border-width: 0;
 }
 
 .inner-header {
   padding-top: 35px;
   padding-left: 70px;
   padding-right: 70px;
-  margin: 0px;
+  margin: 0;
 }
 
 .inner-header-title {
@@ -375,11 +366,17 @@ border-width: 0px;
   margin: 0 auto;
 }
 
-.catalog-filters-item{    /*Не соображу как выравнивание сделать*/
+.catalog-filters-list {
+  padding-left:0;
+}
+
+
+.catalog-filters-item{
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
   list-style-type: none;
+  text-align: left;
 }
 
 .limitation {
@@ -409,17 +406,16 @@ font-weight: 700;
 background-color: #82B3D3;
 Width: 191px;
 Height: 36px;
-border-width: 0px;
+border-width: 0;
 }
 
 .button-reset  {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  background-color:rgba(130, 179, 211, 0); /*не придумала как по-другому убрать фон кнопки, но появился вопрос - как убрать тень*/
-  Width: 191px;
+  background-color:rgba(130, 179, 211, 0);
   Height: 36px;
-  border-width: 0px;
+  border-width: 0;
   }
 
 .select-control {
@@ -449,8 +445,8 @@ border-width: 0px;
                                       /*Здесь иконки вида*/
 
 .product-list {
-  margin: 0px 70px;
-  padding: 0;
+  margin-bottom: 80px;
+  padding: 0 70px;
   display: flex;
   flex-wrap:wrap;
   list-style: none;
@@ -487,6 +483,7 @@ text-decoration: none;
 
 .card-buttons {
   display: flex;
+  gap: 20px;
 
 }
 
@@ -499,8 +496,7 @@ color: #FFFFFF;
 text-transform:uppercase;
 text-decoration: none;
 background-color:#756157;
-padding-top: 8px;
-padding-bottom: 8px;
+padding: 8px;
 border-radius: 4px;
 width: 140px;
 display: flex;
@@ -509,17 +505,14 @@ align-items: center;
 
 }
 
-.favotite {    /*Почему переносится*/
+.favotite {
 font-size: 16px;
 font-weight: 700;
 line-height: 20px;
 text-align: center;
 color: #FFFFFF;
 background-color: #82B3D3;
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 18px;     /*Без этих двух значение В ИЗБРАННОЕ с переносом идет, причем на макете верное значение 20*/
-padding-right: 18px;    /*Без этих двух значение В ИЗБРАННОЕ с переносом идет, причем на макете верное значение 20*/
+padding: 8px;
 border-radius: 4px;
 width: 140px;
 display: flex;
@@ -534,11 +527,7 @@ font-weight: 700;
 line-height: 20px;
 color: #FFFFFF;
 background-color: #7DB54F;
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 16px;     /*Без этих двух значение В ИЗБРАННОМ с переносом идет, причем на макете верное значение 18*/
-padding-right: 16px;    /*Без этих двух значение В ИЗБРАННОМ с переносом идет, причем на макете верное значение 18*/
-border-radius: 4px;
+padding: 8px;
 border-radius: 4px;
 width: 140px;
 display: flex;
@@ -554,7 +543,6 @@ line-height: 20px;
 .pagination {
   display:flex;
   gap: 8px;
-  margin-top: 80px;
   margin-left: 70px;
 }
 
@@ -562,11 +550,14 @@ line-height: 20px;
   background-color: #82B3D3;
   color: #FFFFFF;
   text-decoration: none;
-  width: 60px;
-  height: 60px;
+  display: flex;
+  min-width: 60px;
+  min-height: 60px;
   border-radius: 4px;
-  padding: 11px 0px 0px 0px;
-  /*Текст был не посредине, правильно ли так центровать, если в фигме нецелые числа, не могу отцентровать текст*/
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .pagination-current {
@@ -581,7 +572,7 @@ line-height: 20px;
   width: 60px;
   height: 60px;
   border-radius: 4px;
-  padding: 11px 0px 0px 0px;
+  padding: 11px 0 0 0;
 }
 
 .subscription-catalog {
@@ -601,7 +592,7 @@ line-height: 20px;
   text-transform:uppercase;
 }
 
-.footer-socials {      /*Не удается выровнять футер. Номер телефона не в середине*/
+.footer-socials {
   display: flex;
   width: 1200px;
   margin: 0 auto;
