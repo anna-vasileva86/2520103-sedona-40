@@ -69,13 +69,16 @@ button {
 }
 
 .navigation {
-  display: flex;
+  /*display: grid; */ display: flex;
+  grid-template-columns: 140px 450px 268px;
+  column-gap: 5px;
   width: 1200px;
   font-size: 20px;
   Line-height:24px;
   font-weight: 700;
   color: #000000;
   margin: 0 auto;
+
 }
 
 .navigation-list {
@@ -86,6 +89,7 @@ button {
   flex-direction: row;
   justify-content: space-evenly;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .navigation-user {
@@ -112,6 +116,7 @@ button {
   text-align: center;
   color: #000000;
   text-decoration: none;
+  display: block;
 }
 
 .main-container {
@@ -219,7 +224,7 @@ color:#FFFFFF;
   color: #000000;
 }
 
-.advantages-item-description, .services-description, .hotel-card-group, .hotel-card-price {
+.advantages-item-description, .services-description {
   font-size: 18px;
   Line-height: 21px;
   text-align: center;
@@ -317,10 +322,14 @@ color:#FFFFFF;
   color:#FFFFFF;
   background-color: #F2F2F2;
   width: 452px;
-height: 52px;
-gap: 260px;
-border-radius: 4px 0 0 4px;
-border-width: 0;
+  height: 52px;
+  gap: 260px;
+  border-radius: 4px 0 0 4px;
+  border-width: 0;
+}
+
+.button-e-mail {
+  border-radius: 0 4px 4px 0;
 }
 
 .inner-header {
@@ -445,13 +454,12 @@ border-width: 0;
                                       /*Здесь иконки вида*/
 
 .product-list {
-  margin-bottom: 80px;
+ margin-bottom: 80px;
   padding: 0 70px;
   display: flex;
   flex-wrap:wrap;
   list-style: none;
   gap: 20px;
-
 
                        /*Обратить внимание на границы ячеек, центрирование */
 }
@@ -471,7 +479,29 @@ border-width: 0;
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+  align-self: flex-start;
+  order: 1;
+    /*Нужно ли в catalog поменять местами название и изображение, если в тренажерах сказано, что название первым идет*/
   }
+
+.hotel-card-group-price {
+  display: grid;
+  grid-template-columns: 140px 140px;
+}
+
+.hotel-card-group {
+  font-size: 18px;
+  Line-height: 21px;
+  text-align:left;
+  margin: 0;
+}
+
+.hotel-card-price {
+  font-size: 18px;
+  Line-height: 21px;
+  text-align:right;
+  margin: 0;
+}
 
 .hotel-card-link {
 font-size: 24px;
@@ -479,12 +509,13 @@ line-height: 28px;
 font-weight: 700;
 color: #000000;
 text-decoration: none;
+display: flex;
+flex-direction: column;
 }
 
 .card-buttons {
   display: flex;
   gap: 20px;
-
 }
 
 .show-more {
@@ -544,6 +575,7 @@ line-height: 20px;
   display:flex;
   gap: 8px;
   margin-left: 70px;
+  list-style-type: none;
 }
 
 .pagination-link {
@@ -569,10 +601,14 @@ line-height: 20px;
   background-color: #FFFFFF;
   color: #000000;
   text-decoration: none;
-  width: 60px;
-  height: 60px;
+  display: flex;
+  min-width: 60px;
+  min-height: 60px;
   border-radius: 4px;
-  padding: 11px 0 0 0;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .subscription-catalog {
