@@ -69,8 +69,7 @@ button {
 }
 
 .navigation {
-  /*display: grid; */ display: flex;
-  grid-template-columns: 140px 450px 268px;
+  display: flex;
   column-gap: 5px;
   width: 1200px;
   font-size: 20px;
@@ -81,19 +80,22 @@ button {
 
 }
 
-.navigation-list {
-  width: 450px;
+.header-logo-link {
+  margin-left: 28px;
+}
+
+.navigation-list {    /*Ничего, что у меня переполнение с 4 пунтка уже на 2 строку идет?*/
+  width: 460px;
   margin: 0;
   padding:0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style: none;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .navigation-user {
-  max-width: 300px;
+  min-width: 44px;
+  min-height: 64px;
   margin-left: auto;
 }
 
@@ -107,6 +109,9 @@ button {
   background-color: #756157;
   padding: 8px 50px 8px 50px;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+
 }
 
 .navigation-link {
@@ -117,10 +122,20 @@ button {
   color: #000000;
   text-decoration: none;
   display: block;
+  padding: 20px 16px;
+}
+
+.navigation-link-current {
+  position: relative;
+  border-bottom: 2px solid #756257;
+
+
 }
 
 .main-container {
   flex-grow: 1;
+  padding:0;
+  margin: 0;
 }
 
 .main-inner {
@@ -128,6 +143,7 @@ button {
   /*color: #333333;*/
   background-color: #FFFFFF;
   text-align: center;
+  margin:0;
 }
 
 .page-container {
@@ -148,9 +164,7 @@ color:#FFFFFF;
   background-image: url("../images/mountains_background.jpg");
   background-size: cover;
   background-repeat:no-repeat;
-}
-
-.slogan-image {
+  margin:0;
   padding: 51px 371px 82px;
 }
 
@@ -164,6 +178,7 @@ color:#FFFFFF;
   font-weight: 700;
   text-transform:uppercase;
   color: #000000;
+  margin-top: 0;
 }
 
 .advantages-list {
@@ -201,6 +216,7 @@ color:#FFFFFF;
 
 .advanages-column-text {
   width: 400px;
+  padding-top: 102px;
   padding-left: 85px;
   padding-right: 85px;
   box-sizing: border-box;
@@ -212,7 +228,8 @@ color:#FFFFFF;
   font-weight: 700;
   color: #FFFFFF;
   text-transform:uppercase;
-  padding-top: 102px; /*не уверена*/
+ /*не уверена*/
+  margin-bottom: 30px;
 }
 
 .advantages-item-title, .services-title {
@@ -222,6 +239,7 @@ color:#FFFFFF;
   text-align: center;
   text-transform:uppercase;
   color: #000000;
+  margin-bottom: 30px;
 }
 
 .advantages-item-description, .services-description {
@@ -250,7 +268,7 @@ color:#FFFFFF;
 .services-item-2 {
   background-color :#FFFFFF;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -262,7 +280,7 @@ color:#FFFFFF;
 .services-item-1 {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  Height: 385px;
+  min-height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -306,8 +324,9 @@ color:#FFFFFF;
   Line-height:24px;
   font-weight: 700;
   color: #FFFFFF;
-  Width: 150px;
+  max-width: 150px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .price {
@@ -319,13 +338,14 @@ color:#FFFFFF;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
-  color:#FFFFFF;
+  color: #000000;
   background-color: #F2F2F2;
   width: 452px;
   height: 52px;
   gap: 260px;
   border-radius: 4px 0 0 4px;
   border-width: 0;
+  padding-left:20px;
 }
 
 .button-e-mail {
@@ -336,25 +356,30 @@ color:#FFFFFF;
   padding-top: 35px;
   padding-left: 70px;
   padding-right: 70px;
-  margin: 0;
+
 }
 
 .inner-header-title {
   font-size: 60px;
+  margin:0;
   line-height: 78px;
   font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .breadcrumbs {
   display: flex;
-  flex-direction: row;
-  padding-top: 6px;
-  padding-left: 70px;
   margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  flex-direction: row;
+
+
 }
 
 .breadcrumbs-list {
-  list-style-type: none;
+  margin-right: 28px;
 }
 
 .breadcrumbs-item {
@@ -366,7 +391,14 @@ color:#FFFFFF;
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .catalog-filters {
@@ -450,15 +482,32 @@ border-width: 0;
   Height: 49px;
   Width: 292px;
 }
+                             /*Bконки вида*/
+.sort {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  width: 160px;
+  grid-gap: 8px;
+}
 
-                                      /*Здесь иконки вида*/
+.sort-botton {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sort-current {
+  border: 2px solid #000000;
+}
 
 .product-list {
  margin-bottom: 80px;
   padding: 0 70px;
   display: flex;
   flex-wrap:wrap;
-  list-style: none;
+  list-style-type: none;
   gap: 20px;
 
                        /*Обратить внимание на границы ячеек, центрирование */
@@ -590,6 +639,7 @@ line-height: 20px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
 }
 
 .pagination-current {
@@ -628,7 +678,7 @@ line-height: 20px;
   text-transform:uppercase;
 }
 
-.footer-socials {
+.footer-contacts {
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -638,15 +688,20 @@ line-height: 20px;
 
                      /*Footer*/
 .social-links {
+
+  margin: 0;
+  padding: 0;
   display: flex;
+  flex-wrap: wrap;
   max-width: 150px;
   margin-right: 41px;
+  list-style-type: none
+
 }
 
-.social-links-icon {
+.footer-social-item {
   display: flex;
   justify-content: center;
-  width: 24px;
   Width: 47px;
   Height:40px;
 }
