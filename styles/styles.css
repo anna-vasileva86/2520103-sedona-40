@@ -295,7 +295,7 @@ color:#FFFFFF;
   background-image: url("../images/background_subscription.jpg");
   background-size: cover;
   background-repeat:no-repeat;
-  padding: 96px 258px 104px;
+  padding: 96px 70px 104px;
 }
 
 .subscription-title {
@@ -687,6 +687,7 @@ opacity: 0px;
 
 .subscription-catalog-form, .subscription-form {
   display: flex;
+  justify-content: center;
 }
 
 .subscription-catalog-title {
