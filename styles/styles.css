@@ -299,11 +299,18 @@ color:#FFFFFF;
 }
 
 .subscription-title {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   color:#FFFFFF;
   text-transform:uppercase;
+}
+
+.subscription-description {
+  margin-top: 0;
+  margin-bottom: 55px;
 }
 
 .inner{
